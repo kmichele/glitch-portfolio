@@ -6,13 +6,13 @@ $(window).scroll(function() {
   parallax();
 })
 
-$("#frequencies").click(function(){
-  if (document.getElementById("audio").paused) {
-  document.getElementById("audio").play()
-} else {
-  document.getElementById("audio").pause()
-}
-})
+// $("#frequencies").click(function(){
+//   if (document.getElementById("audio").paused) {
+//   document.getElementById("audio").play()
+// } else {
+//   document.getElementById("audio").pause()
+// }
+// })
 $("#future").click(function(){
   if (document.getElementById("audio2").paused) {
   document.getElementById("audio2").play()
@@ -28,7 +28,8 @@ function parallax() {
   $('.slide1').css('background-position', 'center ' + (wScroll*0.75) + 'px')
   // $('.logo').css('transform')
   $('.slide2').css('background-position', 'center ' + (wScroll*-0.05) + 'px')
-  $('.slide4').css('background-position', 'center ' + (wScroll*-0.05) + 'px')
+  $('.slide3').css('background-position', 'center ' + (wScroll*-0.03) + 'px')
+  $('.slide4').css('background-position', 'center ' + (wScroll*-0.03) + 'px')
 }
 
 function rando() {
